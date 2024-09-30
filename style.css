@@ -14,11 +14,11 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #f9fff6;
+    color: #515151;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #0779e4 3px solid;
+    border-bottom: #cbd0c8 3px solid;
 }
 
 header h1 {
@@ -51,11 +51,6 @@ h2 {
     margin-bottom: 30px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
 ul li {
     margin-bottom: 10px;
 }
@@ -66,4 +61,10 @@ footer {
     padding: 10px;
     background-color: #333;
     color: white;
+}
+
+.icon {
+    vertical-align: middle;
+    display: inline:block;
+    margin-right: 5px;
 }
