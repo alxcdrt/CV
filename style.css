@@ -127,7 +127,11 @@ footer.dark {
     color: var(--primary-dark);
 }
 
-/* switch */
+.dark a {
+    color: #389CFF;
+}
+
+/* Switch */
 .switch {
   position: relative;
   display: inline-block;
@@ -185,8 +189,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.switch-container {
+.config {
     text-align: right;
-    padding-bottom: 5px;
-    padding-right: 20px;
+    margin-top: 20px;
 }
