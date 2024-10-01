@@ -44,7 +44,7 @@ header {
 header.dark {
     background: var(--background-dark);
     color: var(--text-dark);
-    border-bottom: var(--text-dark);
+    border-bottom-color: var(--primary-dark);
 }
 
 header h1 {
