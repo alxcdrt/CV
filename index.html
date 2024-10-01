@@ -11,6 +11,14 @@
         <div class="container">
             <h1>Alexis Coudert</h1>
         </div>
+        <div class="switch-container">
+            <span class="icon"><i data-lucide="sun"></i></span>
+            <label class="switch">
+                <input id="dark-mode-switch" onchange="toggleDarkMode()" type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <span class="icon"><i data-lucide="moon"></i></span>
+        </div>
     </header>
 
     <section class="main container">
@@ -158,6 +166,7 @@
         <p>&copy; 2024 Alexis Coudert</p>
     </footer>
 
+<script src="index.js"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
     lucide.createIcons();
