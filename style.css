@@ -131,6 +131,16 @@ footer.dark {
     color: #389CFF;
 }
 
+.job-info {
+    display: flex;
+    gap: 10px;
+}
+
+.job-info p {
+    margin: 0;
+    display: flex;
+}
+
 /* Switch */
 .switch {
   position: relative;
