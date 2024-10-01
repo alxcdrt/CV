@@ -1,10 +1,23 @@
+:root {
+    --text: #070404;
+    --background: #faf6f7;
+    --primary: #a76772;
+    --secondary: #c8b7a0;
+    --accent: #b9af86;
+    --text-dark: #fbf9f9;
+    --background-dark: #0a0507;
+    --primary-dark: #985762;
+    --secondary-dark: #5e4d36;
+    --accent-dark: #786e45;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f2f2f2;
+    color: var(--text);
 }
 
 .container {
@@ -14,11 +27,11 @@ body {
 }
 
 header {
-    background: #f9fff6;
+    background: var(--background);
     color: #515151;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #cbd0c8 3px solid;
+    border-bottom: var(--primary) 3px solid;
 }
 
 header h1 {
@@ -29,22 +42,32 @@ header h1 {
 }
 
 .main {
-    background: #fff;
+    background-color: var(--background);
     padding: 20px;
     margin-top: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #0779e4;
+    border-bottom-style: groove;
+    border-bottom-color: var(--primary)
+}
+
+h3 {
+    text-decoration: underline var(--secondary)
 }
 
 .contact-info {
-    text-align: center;
+    text-align: left;
+    display: inline-block;
 }
 
 .contact-info p {
     margin: 5px 0;
+}
+
+.center {
+    text-align: center;
 }
 
 .section {
@@ -59,12 +82,13 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 .icon {
     vertical-align: middle;
-    display: inline:block;
+    display: inline-block;
     margin-right: 5px;
+    color: var(--primary)
 }
