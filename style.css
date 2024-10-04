@@ -13,6 +13,10 @@
     --page-dark: #2f2f2f;
 }
 
+section[lang=en], span[lang=es], span[lang=fr] {
+    display: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -200,6 +204,43 @@ input:checked + .slider:before {
 }
 
 .config {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
+}
+
+/* Language selector */ 
+#lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#lang-selector button {
+  background-color: white;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px
+}
+
+#selector-tooltip {
+  display: none;
+  gap: 5px;
+}
+
+#lang-selector-btn {
+    cursor: pointer;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    background: #fff;
+}
+
+.flag {
+ padding: 5px;
+ cursor: pointer;
+}
+
+.flag:hover {
+   border: 1px solid;
 }
