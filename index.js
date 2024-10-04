@@ -24,14 +24,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function toggleDarkMode() {
-    document.querySelector('.main').classList.toggle('dark');
+    document.querySelectorAll('.main')
+		.forEach(e => e.classList.toggle('dark'));
 
     document.querySelectorAll('.icon')
-        .forEach((e) => e.classList.toggle('dark'));
+        .forEach(e => e.classList.toggle('dark'));
 
     document
       .querySelectorAll('body, h2, h3')
-        .forEach((e) => e.classList.toggle('dark'));
+        .forEach(e => e.classList.toggle('dark'));
 
     document
       .querySelector('header').classList.toggle('dark');
