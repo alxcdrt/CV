@@ -18,9 +18,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     if (!lang || !languages.has(lang))
         lang = defaultLanguage;
+    
+    languages.forEach(function (_, v) {
+        document.querySelector(`section[lang=${v}]`).style.display = 'none';
+    });
 
     selectLanguage(lang);
-
 });
 
 function toggleDarkMode() {
