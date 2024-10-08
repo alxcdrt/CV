@@ -42,6 +42,8 @@ function toggleDarkMode() {
 
     document
       .querySelector('footer').classList.toggle('dark');
+
+    document.getElementById('lang-selector-btn').classList.toggle('dark');
 }
 
 function toggleSelector() {
